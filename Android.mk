@@ -258,28 +258,4 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
-PRODUCT_PACKAGES += \
-    OemTelephonyApp \
-    ConfURIDialer \
-    WfdService \
-    embms \
-    ims \
-    EssentialResources \
-    uceShimService \
-    CNEService \
-    CarrierServices \
-    ConnMO \
-    ChameleonProvider \
-    DMService \
-    EssentialCarrier \
-    HotwordEnrollmentOKGoogleWCD9335 \
-    HotwordEnrollmentTGoogleWCD9335 \
-    HotwordEnrollmentXGoogleWCD9335 \
-    Klik \
-    OobConfig \
-    OMADMDIL \
-    SMF \
-    VzwOmaTrigger \
-    qcrilmsgtunnel
-
 endif

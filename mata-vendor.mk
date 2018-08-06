@@ -339,3 +339,29 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/usr/srec/en-US/prons_exception_dictionary_file.txt:system/usr/srec/en-US/prons_exception_dictionary_file.txt \
     vendor/essential/mata/proprietary/usr/srec/en-US/rescoring.fst.louds:system/usr/srec/en-US/rescoring.fst.louds \
     vendor/essential/mata/proprietary/usr/srec/en-US/word_classifier:system/usr/srec/en-US/word_classifier
+
+
+PRODUCT_PACKAGES += \
+    OemTelephonyApp \
+    ConfURIDialer \
+    WfdService \
+    embms \
+    ims \
+    EssentialResources \
+    uceShimService \
+    CNEService \
+    CarrierServices \
+    ConnMO \
+    ChameleonProvider \
+    DMService \
+    EssentialCarrier \
+    HotwordEnrollmentOKGoogleWCD9335 \
+    HotwordEnrollmentTGoogleWCD9335 \
+    HotwordEnrollmentXGoogleWCD9335 \
+    Klik \
+    OobConfig \
+    OMADMDIL \
+    SMF \
+    VzwOmaTrigger \
+    qcrilmsgtunnel
+

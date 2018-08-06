@@ -17,16 +17,6 @@
 
 
 PRODUCT_COPY_FILES += \
-    vendor/essential/mata/proprietary/app/ConfURIDialer/ConfURIDialer.apk:system/app/ConfURIDialer/ConfURIDialer.apk \
-    vendor/essential/mata/proprietary/app/EssentialResources/EssentialResources.apk:system/app/EssentialResources/EssentialResources.apk \
-    vendor/essential/mata/proprietary/app/MataLayout/MataLayout.apk:system/app/MataLayout/MataLayout.apk \
-    vendor/essential/mata/proprietary/app/OemTelephonyApp/OemTelephonyApp.apk:system/app/OemTelephonyApp/OemTelephonyApp.apk \
-    vendor/essential/mata/proprietary/app/WfdService/WfdService.apk:system/app/WfdService/WfdService.apk \
-    vendor/essential/mata/proprietary/app/embms/embms.apk:system/app/embms/embms.apk \
-    vendor/essential/mata/proprietary/app/ims/ims.apk:system/app/ims/ims.apk \
-    vendor/essential/mata/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so \
-    vendor/essential/mata/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so \
-    vendor/essential/mata/proprietary/app/uceShimService/uceShimService.apk:system/app/uceShimService/uceShimService.apk \
     vendor/essential/mata/proprietary/bin/art:system/bin/art \
     vendor/essential/mata/proprietary/bin/climax:system/bin/climax \
     vendor/essential/mata/proprietary/bin/curl:system/bin/curl \
@@ -327,27 +317,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/essential/mata/proprietary/priv-app/CNEService/CNEService.apk:system/priv-app/CNEService/CNEService.apk \
-    vendor/essential/mata/proprietary/priv-app/CarrierServices/CarrierServices.apk:system/priv-app/CarrierServices/CarrierServices.apk \
-    vendor/essential/mata/proprietary/priv-app/ChameleonProvider/ChameleonProvider.apk:system/priv-app/ChameleonProvider/ChameleonProvider.apk \
-    vendor/essential/mata/proprietary/priv-app/ConnMO/ConnMO.apk:system/priv-app/ConnMO/ConnMO.apk \
-    vendor/essential/mata/proprietary/priv-app/DMService/DMService.apk:system/priv-app/DMService/DMService.apk
-    vendor/essential/mata/proprietary/priv-app/DMService/lib/arm/libdmengine.so:system/priv-app/DMService/lib/arm/libdmengine.so \
-    vendor/essential/mata/proprietary/priv-app/DMService/lib/arm/libdmjavaplugin.so:system/priv-app/DMService/lib/arm/libdmjavaplugin.so \
-    vendor/essential/mata/proprietary/priv-app/EssentialCarrier/EssentialCarrier.apk:system/priv-app/EssentialCarrier/EssentialCarrier.apk \
-    vendor/essential/mata/proprietary/priv-app/EssentialRetail/EssentialRetail.apk:system/priv-app/EssentialRetail/EssentialRetail.apk \
-    vendor/essential/mata/proprietary/priv-app/EssentialSUWOverlay/EssentialSUWOverlay.apk:system/priv-app/EssentialSUWOverlay/EssentialSUWOverlay.apk \
-    vendor/essential/mata/proprietary/priv-app/EssentialSuwWelcome/EssentialSuwWelcome.apk:system/priv-app/EssentialSuwWelcome/EssentialSuwWelcome.apk \
-    vendor/essential/mata/proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:system/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk \
-    vendor/essential/mata/proprietary/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:system/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk \
-    vendor/essential/mata/proprietary/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:system/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk \
-    vendor/essential/mata/proprietary/priv-app/Klik/Klik.apk:system/priv-app/Klik/Klik.apk \
-    vendor/essential/mata/proprietary/priv-app/OobConfig/OobConfig.apk:system/priv-app/OobConfig/OobConfig.apk \
-    vendor/essential/mata/proprietary/priv-app/OMADMDIL/OMADMDIL.apk:system/priv-app/OMADMDIL/OMADMDIL.apk \
-    vendor/essential/mata/proprietary/priv-app/OMADMDIL/lib/arm/libsmm.so:system/priv-app/OMADMDIL/lib/arm/libsmm.so \
-    vendor/essential/mata/proprietary/priv-app/SMF/SMF.apk:system/priv-app/SMF/SMF.apk \
-    vendor/essential/mata/proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:system/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk \
-    vendor/essential/mata/proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
     vendor/essential/mata/proprietary/usr/keylayout/Vendor_2e17_Product_a001.kl:system/usr/keylayout/Vendor_2e17_Product_a001.kl \
     vendor/essential/mata/proprietary/usr/keylayout/ep_portable_model.mmap:system/usr/keylayout/ep_portable_model.mmap \
     vendor/essential/mata/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \

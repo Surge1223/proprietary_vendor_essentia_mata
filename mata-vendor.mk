@@ -343,7 +343,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     OemTelephonyApp \
-    ConfURIDialer \
     WfdService \
     embms \
     ims \

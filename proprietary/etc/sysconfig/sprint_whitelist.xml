@@ -33,4 +33,5 @@
 <config>
     <!-- These are Sprint apps that need to freely run in the background -->
     <allow-in-power-save package="com.sprint.ce.updater" />
+    <allow-in-power-save package="com.sprint.ms.smf.services" />
 </config>

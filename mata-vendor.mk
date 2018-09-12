@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-
-
 PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/bin/art:system/bin/art \
     vendor/essential/mata/proprietary/bin/climax:system/bin/climax \
@@ -29,6 +27,18 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/bin/setup_fs:system/bin/setup_fs \
     vendor/essential/mata/proprietary/bin/tloc_daemon:system/bin/tloc_daemon \
     vendor/essential/mata/proprietary/bin/wfdservice:system/bin/wfdservice \
+    vendor/essential/mata/proprietary/etc/cdma_call_conf.xml:system/etc/cdma_call_conf.xml \
+    vendor/essential/mata/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/essential/mata/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/essential/mata/proprietary/etc/default-permissions/default-permissions-google.xml:system/etc/default-permissions/default-permissions-google.xml \
+    vendor/essential/mata/proprietary/etc/default-permissions:system/etc/default-permissions \
+    vendor/essential/mata/proprietary/etc/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
+    vendor/essential/mata/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    vendor/essential/mata/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    vendor/essential/mata/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    vendor/essential/mata/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+    vendor/essential/mata/proprietary/etc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+    vendor/essential/mata/proprietary/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     vendor/essential/mata/proprietary/etc/permissions/LteDirectDiscovery.xml:system/etc/permissions/LteDirectDiscovery.xml \
     vendor/essential/mata/proprietary/etc/permissions/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     vendor/essential/mata/proprietary/etc/permissions/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
@@ -47,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/essential/mata/proprietary/etc/permissions/com.ts.android.chameleon.chameleonshare.xml:system/etc/permissions/com.ts.android.chameleon.chameleonshare.xml \
     vendor/essential/mata/proprietary/etc/permissions/com.ts.android.chameleon.dataservice.xml:system/etc/permissions/com.ts.android.chameleon.dataservice.xml \
+    vendor/essential/mata/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/essential/mata/proprietary/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     vendor/essential/mata/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/essential/mata/proprietary/etc/permissions/platform.xml:system/etc/permissions/platform.xml \
@@ -57,29 +68,24 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/etc/permissions/rcs_service_aidl.xml:system/etc/permissions/rcs_service_aidl.xml \
     vendor/essential/mata/proprietary/etc/permissions/rcs_service_api.xml:system/etc/permissions/rcs_service_api.xml \
     vendor/essential/mata/proprietary/etc/permissions/vendor-essential-hardware-sidecar.xml:system/etc/permissions/vendor-essential-hardware-sidecar.xml \
+    vendor/essential/mata/proprietary/etc/scve/facereco/gModel.dat:system/etc/scve/facereco/gModel.dat \
+    vendor/essential/mata/proprietary/etc/sepolicy_freeze_test:system/etc/sepolicy_freeze_test \
+    vendor/essential/mata/proprietary/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    vendor/essential/mata/proprietary/etc/sysconfig/essential-hiddenapi-package-whitelist.xml:system/etc/sysconfig/essential-hiddenapi-package-whitelist.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/framework-sysconfig.xml:system/etc/sysconfig/framework-sysconfig.xml \
+    vendor/essential/mata/proprietary/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
+    vendor/essential/mata/proprietary/etc/sysconfig/hiddenapi-package-whitelist.xml:system/etc/sysconfig/hiddenapi-package-whitelist.xml \
+    vendor/essential/mata/proprietary/etc/sysconfig/mata-disabled-until-used-preinstalled-carrier-app.xml:system/etc/sysconfig/mata-disabled-until-used-preinstalled-carrier-app.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/sprint_whitelist.xml:system/etc/sysconfig/sprint_whitelist.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
-    vendor/essential/mata/proprietary/framework/WfdCommon.jar:system/framework/WfdCommon.jar \
-    vendor/essential/mata/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
-    vendor/essential/mata/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/essential/mata/proprietary/framework/com.ts.android.chameleon.dataservice.jar:system/framework/com.ts.android.chameleon.dataservice.jar \
-    vendor/essential/mata/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/essential/mata/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/essential/mata/proprietary/framework/oem-services.jar:system/framework/oem-services.jar \
-    vendor/essential/mata/proprietary/framework/org.simalliance.openmobileapi.jar:system/framework/org.simalliance.openmobileapi.jar \
-    vendor/essential/mata/proprietary/framework/qmapbridge.jar:system/framework/qmapbridge.jar \
-    vendor/essential/mata/proprietary/framework/rcs_service_aidl.jar:system/framework/rcs_service_aidl.jar \
-    vendor/essential/mata/proprietary/framework/rcs_service_api.jar:system/framework/rcs_service_api.jar \
-    vendor/essential/mata/proprietary/framework/sprint-services.jar:system/framework/sprint-services.jar \
-    vendor/essential/mata/proprietary/framework/sprint-telephony-common.jar:system/framework/sprint-telephony-common.jar \
-    vendor/essential/mata/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    vendor/essential/mata/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
-    vendor/essential/mata/proprietary/framework/telephony-ext.jar:system/framework/telephony-ext.jar \
+    vendor/essential/mata/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/essential/mata/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+    vendor/essential/mata/proprietary/etc/whitelistedapps.xml:system/etc/whitelistedapps.xml \
     vendor/essential/mata/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/essential/mata/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/essential/mata/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/essential/mata/proprietary/lib/libCxAudioHidLib.so:system/lib/libCxAudioHidLib.so \
     vendor/essential/mata/proprietary/lib/libFidoCryptoJNI.so:system/lib/libFidoCryptoJNI.so \
     vendor/essential/mata/proprietary/lib/libFidoCrypto_system.so:system/lib/libFidoCrypto_system.so \
@@ -89,8 +95,10 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/essential/mata/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/essential/mata/proprietary/lib/libSeemplog.so:system/lib/libSeemplog.so \
+    vendor/essential/mata/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
     vendor/essential/mata/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
     vendor/essential/mata/proprietary/lib/libblurbuster.so:system/lib/libblurbuster.so \
+    vendor/essential/mata/proprietary/lib/libc++.so:system/lib/libc++.so \
     vendor/essential/mata/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
     vendor/essential/mata/proprietary/lib/libcurl.so:system/lib/libcurl.so \
     vendor/essential/mata/proprietary/lib/libcxaudiohidlib_embcb_jni.so:system/lib/libcxaudiohidlib_embcb_jni.so \
@@ -101,7 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libhvxMathVIO.so:system/lib/libhvxMathVIO.so \
     vendor/essential/mata/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/essential/mata/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/essential/mata/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
+    vendor/essential/mata/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so
     vendor/essential/mata/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
     vendor/essential/mata/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
     vendor/essential/mata/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
@@ -172,6 +180,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libvraudio_client.so:system/lib/libvraudio_client.so \
     vendor/essential/mata/proprietary/lib/libwbc_jni.so:system/lib/libwbc_jni.so \
     vendor/essential/mata/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/essential/mata/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
     vendor/essential/mata/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/essential/mata/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
     vendor/essential/mata/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
@@ -187,6 +196,12 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
     vendor/essential/mata/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/essential/mata/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libhvxMathVIO.so:system/lib/rfsa/adsp/libhvxMathVIO.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libscveFaceLandmark_skel.so:system/lib/rfsa/adsp/libscveFaceLandmark_skel.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libscveT2T_skel.so:system/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/essential/mata/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/essential/mata/proprietary/lib/vendor.qti.hardware.camera.device@1.0.so:system/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/essential/mata/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/essential/mata/proprietary/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
@@ -196,6 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/essential/mata/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/essential/mata/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/essential/mata/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/essential/mata/proprietary/lib64/libCxAudioHidLib.so:system/lib64/libCxAudioHidLib.so \
     vendor/essential/mata/proprietary/lib64/libFidoCryptoJNI.so:system/lib64/libFidoCryptoJNI.so \
     vendor/essential/mata/proprietary/lib64/libFidoCrypto_system.so:system/lib64/libFidoCrypto_system.so \
@@ -205,8 +221,10 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/essential/mata/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/essential/mata/proprietary/lib64/libSeemplog.so:system/lib64/libSeemplog.so \
+    vendor/essential/mata/proprietary/lib64/libaacwrapper.so:system/lib64/libaacwrapper.so \
     vendor/essential/mata/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
     vendor/essential/mata/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
+    vendor/essential/mata/proprietary/lib64/libc++.so:system/lib64/libc++.so \
     vendor/essential/mata/proprietary/lib64/libchromaflash.so:system/lib64/libchromaflash.so \
     vendor/essential/mata/proprietary/lib64/libclearsight.so:system/lib64/libclearsight.so \
     vendor/essential/mata/proprietary/lib64/libcurl.so:system/lib64/libcurl.so \
@@ -295,6 +313,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libvraudio_client.so:system/lib64/libvraudio_client.so \
     vendor/essential/mata/proprietary/lib64/libwbc_jni.so:system/lib64/libwbc_jni.so \
     vendor/essential/mata/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
+    vendor/essential/mata/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/essential/mata/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
     vendor/essential/mata/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
     vendor/essential/mata/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
@@ -317,13 +336,73 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
+    vendor/essential/mata/proprietary/lib64/vndk-28/libstagefright_soft_aacdec.so:system/lib64/vndk-28/libstagefright_soft_aacdec.so \
+    vendor/essential/mata/proprietary/lib64/vndk-28/libstagefright_soft_aacenc.so:system/lib64/vndk-28/libstagefright_soft_aacenc.so \
+    vendor/essential/mata/proprietary/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_0079_Product_0011.kl:system/usr/keylayout/Vendor_0079_Product_0011.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_045e_Product_02d1.kl:system/usr/keylayout/Vendor_045e_Product_02d1.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_045e_Product_02e0.kl:system/usr/keylayout/Vendor_045e_Product_02e0.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_b501.kl:system/usr/keylayout/Vendor_046d_Product_b501.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c219.kl:system/usr/keylayout/Vendor_046d_Product_c219.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c21d.kl:system/usr/keylayout/Vendor_046d_Product_c21d.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c21f.kl:system/usr/keylayout/Vendor_046d_Product_c21f.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_054c_Product_05c4.kl:system/usr/keylayout/Vendor_054c_Product_05c4.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_054c_Product_09cc.kl:system/usr/keylayout/Vendor_054c_Product_09cc.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_0583_Product_2060.kl:system/usr/keylayout/Vendor_0583_Product_2060.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_0b05_Product_4500.kl:system/usr/keylayout/Vendor_0b05_Product_4500.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1038_Product_1412.kl:system/usr/keylayout/Vendor_1038_Product_1412.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_12bd_Product_d015.kl:system/usr/keylayout/Vendor_12bd_Product_d015.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1532_Product_0900.kl:system/usr/keylayout/Vendor_1532_Product_0900.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1689_Product_fd00.kl:system/usr/keylayout/Vendor_1689_Product_fd00.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1689_Product_fd01.kl:system/usr/keylayout/Vendor_1689_Product_fd01.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1689_Product_fe00.kl:system/usr/keylayout/Vendor_1689_Product_fe00.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_18d1_Product_2c40.kl:system/usr/keylayout/Vendor_18d1_Product_2c40.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_18d1_Product_5018.kl:system/usr/keylayout/Vendor_18d1_Product_5018.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1949_Product_0401.kl:system/usr/keylayout/Vendor_1949_Product_0401.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1bad_Product_f016.kl:system/usr/keylayout/Vendor_1bad_Product_f016.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1bad_Product_f023.kl:system/usr/keylayout/Vendor_1bad_Product_f023.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1bad_Product_f027.kl:system/usr/keylayout/Vendor_1bad_Product_f027.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1bad_Product_f036.kl:system/usr/keylayout/Vendor_1bad_Product_f036.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_1d79_Product_0009.kl:system/usr/keylayout/Vendor_1d79_Product_0009.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_2378_Product_1008.kl:system/usr/keylayout/Vendor_2378_Product_1008.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/Vendor_2378_Product_100a.kl:system/usr/keylayout/Vendor_2378_Product_100a.kl \
     vendor/essential/mata/proprietary/usr/keylayout/Vendor_2e17_Product_a001.kl:system/usr/keylayout/Vendor_2e17_Product_a001.kl \
     vendor/essential/mata/proprietary/usr/keylayout/ep_portable_model.mmap:system/usr/keylayout/ep_portable_model.mmap \
     vendor/essential/mata/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    vendor/essential/mata/proprietary/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     vendor/essential/mata/proprietary/usr/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
+    vendor/essential/mata/proprietary/usr/srec/en-US/APP_NAME.fst:system/usr/srec/en-US/APP_NAME.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/APP_NAME.syms:system/usr/srec/en-US/APP_NAME.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/CLG.prewalk.fst:system/usr/srec/en-US/CLG.prewalk.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/CONTACT_NAME.fst:system/usr/srec/en-US/CONTACT_NAME.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/CONTACT_NAME.syms:system/usr/srec/en-US/CONTACT_NAME.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/SONG_NAME.fst:system/usr/srec/en-US/SONG_NAME.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/SONG_NAME.syms:system/usr/srec/en-US/SONG_NAME.syms \
     vendor/essential/mata/proprietary/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data:system/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data \
     vendor/essential/mata/proprietary/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data:system/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data \
+    vendor/essential/mata/proprietary/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms:system/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/am_phonemes.syms:system/usr/srec/en-US/am_phonemes.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/app_bias.fst:system/usr/srec/en-US/app_bias.fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/class_normalizer.mfar:system/usr/srec/en-US/class_normalizer.mfar \
+    vendor/essential/mata/proprietary/usr/srec/en-US/commands.abnf:system/usr/srec/en-US/commands.abnf \
+    vendor/essential/mata/proprietary/usr/srec/en-US/compile_grammar.config:system/usr/srec/en-US/compile_grammar.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/config.pumpkin:system/usr/srec/en-US/config.pumpkin \
+    vendor/essential/mata/proprietary/usr/srec/en-US/confirmation_bias.fst:system/usr/srec/en-US/confirmation_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/contacts.abnf:system/usr/srec/en-US/contacts.abnf \
+    vendor/essential/mata/proprietary/usr/srec/en-US/contacts_bias.fst:system/usr/srec/en-US/contacts_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/contacts_disambig.fst:system/usr/srec/en-US/contacts_disambig.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/dictation.config:system/usr/srec/en-US/dictation.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/embedded_class_denorm.mfar:system/usr/srec/en-US/embedded_class_denorm.mfar \
+    vendor/essential/mata/proprietary/usr/srec/en-US/embedded_normalizer.mfar:system/usr/srec/en-US/embedded_normalizer.mfar \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst \
@@ -334,33 +413,106 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst:system/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/endpointer_dictation.config:system/usr/srec/en-US/endpointer_dictation.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/endpointer_model.mmap:system/usr/srec/en-US/endpointer_model.mmap \
+    vendor/essential/mata/proprietary/usr/srec/en-US/endpointer_model:system/usr/srec/en-US/endpointer_model \
+    vendor/essential/mata/proprietary/usr/srec/en-US/endpointer_voicesearch.config:system/usr/srec/en-US/endpointer_voicesearch.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/ep_portable_mean_stddev:system/usr/srec/en-US/ep_portable_mean_stddev \
     vendor/essential/mata/proprietary/usr/srec/en-US/ep_portable_model.mmap:system/usr/srec/en-US/ep_portable_model.mmap \
+    vendor/essential/mata/proprietary/usr/srec/en-US/ep_portable_model.uint8.mmap:system/usr/srec/en-US/ep_portable_model.uint8.mmap \
+    vendor/essential/mata/proprietary/usr/srec/en-US/g2p.data:system/usr/srec/en-US/g2p.data \
+    vendor/essential/mata/proprietary/usr/srec/en-US/g2p_fst:system/usr/srec/en-US/g2p_fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/g2p_graphemes.syms:system/usr/srec/en-US/g2p_graphemes.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/g2p_phonemes.syms:system/usr/srec/en-US/g2p_phonemes.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/grammar.config:system/usr/srec/en-US/grammar.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/graphemes.syms:system/usr/srec/en-US/graphemes.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/hmm_symbols:system/usr/srec/en-US/hmm_symbols \
+    vendor/essential/mata/proprietary/usr/srec/en-US/hmmlist:system/usr/srec/en-US/hmmlist \
+    vendor/essential/mata/proprietary/usr/srec/en-US/input_mean_std_dev:system/usr/srec/en-US/input_mean_std_dev \
+    vendor/essential/mata/proprietary/usr/srec/en-US/lexicon.U.fst:system/usr/srec/en-US/lexicon.U.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/lstm_model.uint8.data:system/usr/srec/en-US/lstm_model.uint8.data \
+    vendor/essential/mata/proprietary/usr/srec/en-US/magic_mic.config:system/usr/srec/en-US/magic_mic.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/media_bias.fst:system/usr/srec/en-US/media_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/metadata:system/usr/srec/en-US/metadata \
+    vendor/essential/mata/proprietary/usr/srec/en-US/monastery_config.pumpkin:system/usr/srec/en-US/monastery_config.pumpkin \
+    vendor/essential/mata/proprietary/usr/srec/en-US/norm_fst:system/usr/srec/en-US/norm_fst \
     vendor/essential/mata/proprietary/usr/srec/en-US/normalizer.mfar:system/usr/srec/en-US/normalizer.mfar \
+    vendor/essential/mata/proprietary/usr/srec/en-US/offensive_word_normalizer.mfar:system/usr/srec/en-US/offensive_word_normalizer.mfar \
+    vendor/essential/mata/proprietary/usr/srec/en-US/offline_action_data.pb:system/usr/srec/en-US/offline_action_data.pb \
+    vendor/essential/mata/proprietary/usr/srec/en-US/phonelist.syms:system/usr/srec/en-US/phonelist.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/phonelist:system/usr/srec/en-US/phonelist \
+    vendor/essential/mata/proprietary/usr/srec/en-US/phonemes.syms:system/usr/srec/en-US/phonemes.syms \
+    vendor/essential/mata/proprietary/usr/srec/en-US/portable_lstm:system/usr/srec/en-US/portable_lstm \
+    vendor/essential/mata/proprietary/usr/srec/en-US/portable_meanstddev:system/usr/srec/en-US/portable_meanstddev \
     vendor/essential/mata/proprietary/usr/srec/en-US/prons_exception_dictionary_file.txt:system/usr/srec/en-US/prons_exception_dictionary_file.txt \
+    vendor/essential/mata/proprietary/usr/srec/en-US/pumpkin.mmap:system/usr/srec/en-US/pumpkin.mmap \
+    vendor/essential/mata/proprietary/usr/srec/en-US/read_items_bias.fst:system/usr/srec/en-US/read_items_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/rescoring.fst.compact:system/usr/srec/en-US/rescoring.fst.compact \
     vendor/essential/mata/proprietary/usr/srec/en-US/rescoring.fst.louds:system/usr/srec/en-US/rescoring.fst.louds \
-    vendor/essential/mata/proprietary/usr/srec/en-US/word_classifier:system/usr/srec/en-US/word_classifier
+    vendor/essential/mata/proprietary/usr/srec/en-US/semantics.pumpkin:system/usr/srec/en-US/semantics.pumpkin \
+    vendor/essential/mata/proprietary/usr/srec/en-US/skip_items_bias.fst:system/usr/srec/en-US/skip_items_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/time_bias.fst:system/usr/srec/en-US/time_bias.fst \
+    vendor/essential/mata/proprietary/usr/srec/en-US/transform.mfar:system/usr/srec/en-US/transform.mfar \
+    vendor/essential/mata/proprietary/usr/srec/en-US/voice_actions.config:system/usr/srec/en-US/voice_actions.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/voice_actions_compiler.config:system/usr/srec/en-US/voice_actions_compiler.config \
+    vendor/essential/mata/proprietary/usr/srec/en-US/word_classifier:system/usr/srec/en-US/word_classifier \
+    vendor/essential/mata/proprietary/usr/srec/en-US/word_confidence_classifier:system/usr/srec/en-US/word_confidence_classifier \
+    vendor/essential/mata/proprietary/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms \
+    vendor/essential/mata/proprietary/wallpapers/champagne.png:system/wallpapers/champagne.png \
+    vendor/essential/mata/proprietary/wallpapers/champagne_small.png:system/wallpapers/champagne_small.png \
+    vendor/essential/mata/proprietary/wallpapers/jaune.png:system/wallpapers/jaune.png \
+    vendor/essential/mata/proprietary/wallpapers/jaune_small.png:system/wallpapers/jaune_small.png \
+    vendor/essential/mata/proprietary/wallpapers/noir.png:system/wallpapers/noir.png \
+    vendor/essential/mata/proprietary/wallpapers/noir_small.png:system/wallpapers/noir_small.png
+
 
 
 PRODUCT_PACKAGES += \
-    OemTelephonyApp \
-    WfdService \
-    embms \
-    ims \
-    EssentialResources \
-    uceShimService \
-    CNEService \
-    CarrierServices \
-    ConnMO \
-    ChameleonProvider \
-    DMService \
-    EssentialCarrier \
-    HotwordEnrollmentOKGoogleWCD9335 \
-    HotwordEnrollmentTGoogleWCD9335 \
-    HotwordEnrollmentXGoogleWCD9335 \
-    Klik \
-    OobConfig \
-    OMADMDIL \
-    SMF \
-    VzwOmaTrigger \
-    qcrilmsgtunnel
+     CNEService \
+     CarrierBrowserProvider \
+     CarrierServices \
+     ChameleonProvider \
+     ConnMO \
+     DMService \
+     DataDispatcher \
+     Ecore \
+     EssentialCarrier \
+     EssentialLegal \
+     EssentialResources \
+     EssentialSUWOverlay \
+     EssentialSuwWelcome \
+     HotwordEnrollmentOKGoogleWCD9335 \
+     HotwordEnrollmentTGoogleWCD9335 \
+     HotwordEnrollmentXGoogleWCD9335 \
+     Klik \
+     OMADMDIL \
+     OemTelephonyApp \
+     OobConfig \
+     PhoneDataHandler \
+     PhoneDataHandler \
+     Score \
+     SprintHiddenMenu \
+     SystemDataHandler \
+     VzwOmaTrigger \
+     WfdCommon \
+     WfdService \
+     audiosphere \
+     com.qti.dpmframework \
+     com.ts.android.chameleon.chameleonshare \
+     com.ts.android.chameleon.dataservice \
+     dpmapi \
+     embms \
+     oem-services \
+     org.simalliance.openmobileapi \
+     qcrilmsgtunnel \
+     qmapbridge \
+     rcs_service_aidl \
+     rcs_service_api \
+     rcsimssettings \
+     sprint-services \
+     sprint-telephony-common \
+     tcmclient \
+     tcmiface \
+     uceShimService \
+     zat.xt.srv
 

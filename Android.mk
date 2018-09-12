@@ -159,16 +159,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := PhoneDataHandler
-LOCAL_SRC_FILES := proprietary/app/PhoneDataHandler/PhoneDataHandler.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := PRESIGNED
@@ -360,9 +350,9 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := zat.xt.srv
+LOCAL_MODULE := izat.xt.srv
 LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/zat.xt.srv.jar
+LOCAL_SRC_FILES := proprietary/framework/izat.xt.srv.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
@@ -385,17 +375,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := qmapbridge
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/qmapbridge.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := rcsimssettings
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/rcsimssettings.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional

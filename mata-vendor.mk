@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/essential/mata/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/essential/mata/proprietary/etc/default-permissions/default-permissions-google.xml:system/etc/default-permissions/default-permissions-google.xml \
-    vendor/essential/mata/proprietary/etc/default-permissions:system/etc/default-permissions \
     vendor/essential/mata/proprietary/etc/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
     vendor/essential/mata/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     vendor/essential/mata/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
@@ -109,7 +108,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libhvxMathVIO.so:system/lib/libhvxMathVIO.so \
     vendor/essential/mata/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/essential/mata/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/essential/mata/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so
+    vendor/essential/mata/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
     vendor/essential/mata/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
     vendor/essential/mata/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
     vendor/essential/mata/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
@@ -489,7 +488,6 @@ PRODUCT_PACKAGES += \
      OemTelephonyApp \
      OobConfig \
      PhoneDataHandler \
-     PhoneDataHandler \
      Score \
      SprintHiddenMenu \
      SystemDataHandler \
@@ -508,11 +506,10 @@ PRODUCT_PACKAGES += \
      qmapbridge \
      rcs_service_aidl \
      rcs_service_api \
-     rcsimssettings \
      sprint-services \
      sprint-telephony-common \
      tcmclient \
      tcmiface \
      uceShimService \
-     zat.xt.srv
+     izat.xt.srv
 

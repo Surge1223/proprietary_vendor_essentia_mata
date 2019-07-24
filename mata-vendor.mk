@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/etc/sepolicy_freeze_test:system/etc/sepolicy_freeze_test \
     vendor/essential/mata/proprietary/etc/spn-conf.xml:system/etc/spn-conf.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/essential-hiddenapi-package-whitelist.xml:system/etc/sysconfig/essential-hiddenapi-package-whitelist.xml \
+    vendor/essential/mata/proprietary/etc/sysconfig/essential.xml:system/etc/sysconfig/essential.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/framework-sysconfig.xml:system/etc/sysconfig/framework-sysconfig.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \

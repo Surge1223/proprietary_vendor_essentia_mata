@@ -1,6 +1,0 @@
-<permissions>
-    <!-- Limitation permission to block out themes from being visible on stock
-         AOSP, or non-OMS devices. -->
-    <feature name="com.essential.feature.ESSENTIAL_EXPERIENCE" />
-
-</permissions>

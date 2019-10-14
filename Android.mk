@@ -18,161 +18,21 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),mata)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := OemTelephonyApp
-LOCAL_SRC_FILES := proprietary/app/OemTelephonyApp/OemTelephonyApp.apk
+LOCAL_MODULE := CarrierServices
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/product/priv-app/CarrierServices/CarrierServices.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := WfdService
-LOCAL_SRC_FILES := proprietary/app/WfdService/WfdService.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := embms
-LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ims
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := EssentialResources
-LOCAL_SRC_FILES := proprietary/app/EssentialResources/EssentialResources.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := uceShimService
-LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := Score
-LOCAL_SRC_FILES := proprietary/app/Score/Score.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SprintHiddenMenu
-LOCAL_SRC_FILES := proprietary/app/SprintHiddenMenu/SprintHiddenMenu.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SystemDataHandler
-LOCAL_SRC_FILES := proprietary/app/SystemDataHandler/SystemDataHandler.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := PhoneDataHandler
-LOCAL_SRC_FILES := proprietary/app/PhoneDataHandler/PhoneDataHandler.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := CarrierBrowserProvider
-LOCAL_SRC_FILES := proprietary/app/CarrierBrowserProvider/CarrierBrowserProvider.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DataDispatcher
-LOCAL_SRC_FILES := proprietary/app/DataDispatcher/DataDispatcher.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := Ecore
-LOCAL_SRC_FILES := proprietary/app/Ecore/Ecore.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := EssentialLegal
-LOCAL_SRC_FILES := proprietary/app/EssentialLegal/EssentialLegal.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := CarrierServices
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/CarrierServices/CarrierServices.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -204,6 +64,16 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := DataDispatcher
+LOCAL_SRC_FILES := proprietary/app/DataDispatcher/DataDispatcher.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := DMService
 LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := PRESIGNED
@@ -215,14 +85,23 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := EssentialCarrier
-LOCAL_SRC_FILES := proprietary/priv-app/EssentialCarrier/EssentialCarrier.apk
+LOCAL_MODULE := Ecore
+LOCAL_SRC_FILES := proprietary/app/Ecore/Ecore.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := embms
+LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -244,6 +123,39 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := EssentialLegal
+LOCAL_SRC_FILES := proprietary/app/EssentialLegal/EssentialLegal.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := EssentialResources
+LOCAL_SRC_FILES := proprietary/app/EssentialResources/EssentialResources.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleRestore
+LOCAL_SRC_FILES := proprietary/product/priv-app/GoogleRestore/GoogleRestore.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_OVERRIDES_PACKAGES := AndroidMigratePrebuilt
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -284,6 +196,16 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := Klik
 LOCAL_SRC_FILES := proprietary/priv-app/Klik/Klik.apk
 LOCAL_CERTIFICATE := PRESIGNED
@@ -295,13 +217,24 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := OobConfig
-LOCAL_SRC_FILES := proprietary/priv-app/OobConfig/OobConfig.apk
+LOCAL_MODULE := OemTelephonyApp
+LOCAL_SRC_FILES := proprietary/app/OemTelephonyApp/OemTelephonyApp.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OobConfig
+LOCAL_SRC_FILES := proprietary/product/priv-app/OobConfig/OobConfig.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -317,8 +250,82 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := PhoneDataHandler
+LOCAL_SRC_FILES := proprietary/app/PhoneDataHandler/PhoneDataHandler.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Score
+LOCAL_SRC_FILES := proprietary/app/Score/Score.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SearchLauncherQRef
+LOCAL_SRC_FILES := proprietary/product/priv-app/SearchLauncherQRef/SearchLauncherQRef.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := SMF
 LOCAL_SRC_FILES := proprietary/priv-app/SMF/SMF.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SprintHiddenMenu
+LOCAL_SRC_FILES := proprietary/app/SprintHiddenMenu/SprintHiddenMenu.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SystemDataHandler
+LOCAL_SRC_FILES := proprietary/app/SystemDataHandler/SystemDataHandler.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uceShimService
+LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -339,48 +346,71 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_MODULE := WfdService
+LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+# jars
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := audiosphere
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/framework/audiosphere.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := SearchLauncherQuickStep
-LOCAL_SRC_FILES := proprietary/priv-app/SearchLauncherQuickStep/SearchLauncherQuickStep.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE := com.qti.dpmframework
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/framework/com.qti.dpmframework.jar
+LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := MobileInstaller
-LOCAL_SRC_FILES := proprietary/priv-app/MobileInstaller/MobileInstaller.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE := com.ts.android.chameleon.dataservice
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/framework/com.ts.android.chameleon.dataservice.jar
+LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GoogleRestore
-LOCAL_SRC_FILES := proprietary/priv-app/GoogleRestore/GoogleRestore.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE := com.ts.android.chameleon.chameleonshare
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/framework/com.ts.android.chameleon.chameleonshare.jar
+LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
-LOCAL_OVERRIDES_PACKAGES := AndroidMigratePrebuilt
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := dpmapi
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/framework/dpmapi.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -472,17 +502,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := tcmiface
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/tcmiface.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := WfdCommon
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
@@ -494,68 +513,14 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := dpmapi
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/dpmapi.jar
+LOCAL_MODULE := vendor.essential.hardware.sidecar-V1.0-java
+LOCAL_MODULE_OWNER := essential
+LOCAL_SRC_FILES := proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.ts.android.chameleon.dataservice
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/com.ts.android.chameleon.dataservice.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.ts.android.chameleon.chameleonshare
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/com.ts.android.chameleon.chameleonshare.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.dpmframework
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/com.qti.dpmframework.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := audiosphere
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/audiosphere.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := org.simalliance.openmobileapi
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/org.simalliance.openmobileapi.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
